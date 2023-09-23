@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    position: relative;
+    bottom: 2rem;
+}
+
+.card {
+    color: white;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(164, 70, 252, 1) 100%);
+    width: 60vw;
+    height: 60vh;
+    text-align: center;
+    border-radius: 30px;
+    padding: 3rem;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5) url('https://i.pinimg.com/originals/48/c1/c9/48c1c910e0ff67341ddb79b4a2f2cd41.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+button {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(34, 202, 34);
+    transition: .3s;
+    color: white;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: rgb(26, 151, 26);
+    transition: .3s;
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button {
+        height: 2rem;
+        margin: .5rem;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .card {
+        width: 70vw;
+        height: 80vh;
+    }
+}
+
+
+
+@media (max-width:420px) {
+    .card {
+        font-size: 13px;
+        width: 80vw;
+    }
+}
